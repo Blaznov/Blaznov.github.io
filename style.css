@@ -1,0 +1,416 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#logo{
+	display: inline-block;
+	
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+/*----------------------------------------------
+------------------------------------------------
+--------------------МЕНЮ-----------------------
+------------------------------------------------
+----------------------------------------------*/
+
+
+button.menu::before {
+	content: '\2261';
+	font-size: 3em;
+}
+button.menu[aria-expanded="true"]::before {
+	content: '×';
+}
+ nav ul {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+ nav ul li {
+	text-align: center;
+	background-color: #3F92D2	;
+	border-bottom: 1px solid Wheat;
+}
+ nav ul li a {
+	padding: .8em 1.5em;
+	color: black;
+	text-decoration: none;
+	display: block;	
+}
+ nav ul li a:hover {
+	background-color: #FE3F44;
+}
+ nav ul li a:focus {
+	outline: thin dotted;
+	outline-offset: -2px;
+}
+ [aria-hidden="false"] {
+	display: block;
+}
+   @media screen and (min-width: 600px) {
+  button.menu {
+  	display: none;
+  }
+   nav ul {
+  	display: table;
+  }
+  nav ul li {
+  	display: table-cell;
+  	text-align: center;
+	font: 13px Tahoma, Geneva, sans-serif;
+  }
+}
+
+
+/*----------------------------------------------
+------------------------------------------------
+--------------------МЕНЮ-----------------------
+------------------------------------------------
+----------------------------------------------*/
+
+
+/* form styles */
+.row {
+display: block;
+padding: 7px 8px;
+margin-bottom: 7px;
+}
+.row:hover {
+background: #f1f7fa;
+}
+#w{
+width:50%;
+max-width:1200px;
+background: #f1f7fa;
+margin:0 auto;
+padding:10px;
+text-align:center;
+}
+
+label {
+display: inline-block;
+font-size: 1.2em;
+font-weight: bold;
+width: 40%;
+padding: 6px 0;
+color: #464646;
+vertical-align: top;
+}
+.req { color: #ca5354; }
+
+.note {
+font-size: 1.2em;
+line-height: 1.33em;
+font-weight: normal;
+padding: 2px 7px;
+margin-bottom: 10px;
+}
+
+input:focus, form textarea:focus { outline: none; }
+
+/* placeholder styles: http://stackoverflow.com/a/2610741/477958 */
+::-webkit-input-placeholder { color: #aaafbd; font-style: italic; } /* WebKit */
+:-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 4 to 18 */
+::-moz-placeholder { color: #aaafbd; font-style: italic; } /* Mozilla Firefox 19+ */
+:-ms-input-placeholder { color: #aaafbd; font-style: italic; } /* Internet Explorer 10+ */
+
+.txt {
+display: inline-block;
+padding: 8px 9px;
+padding-right: 30px;
+width: 50%;
+font-family: 'Oxygen', sans-serif;
+font-size: 1.35em;
+font-weight: normal;
+color: #898989;
+}
+
+
+/*----------------------------------------------
+------------------------------------------------
+--------------------ПОИСК-----------------------
+------------------------------------------------
+----------------------------------------------*/
+
+
+
+.search {
+  width: 30%;
+  position: relative;
+}
+
+.search input {
+  border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+  /* растягиваем поле ввода на всю ширину формы */
+  width: 100%;
+  padding: 8px 37px 9px 15px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+  border-radius: 30px;
+  background: #EEE;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;
+  outline: none;
+}
+
+/* меняем оформление поля ввода при фокусе */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+
+/* оформляем кнопку отправки */
+.search .submit {
+  /* позиционируем кнопку абсолютно от правого края формы */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37px;
+  height: 100%;
+  cursor: pointer;
+  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+  /* добавляем прозрачность кнопке отправки */
+  opacity: 0.5;
+}
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 0.8;
+}
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/*----------------------------------------------
+------------------------------------------------
+--------------------ПОИСК-----------------------
+------------------------------------------------
+----------------------------------------------*/
+
+
+
+#header{
+	width:98%;
+	max-width:1200px;
+	background: #D3D3D3;
+	margin:0 auto;
+	padding:10px;
+}
+#mainmenu{
+	width:100%;
+	max-width:1200px;
+	background: #3F92D2	;
+	margin:0 auto;
+	padding:0px;
+}
+
+#towar_yakor{
+	width:100%;
+	max-width:1200px;
+	background: #C0C0C0;
+	margin:0 auto;
+	padding:0px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#Oglavlenie_main{
+	width:100%;
+	max-width:1200px;
+	background: #3F92D2	;
+	margin:0 auto;
+	padding:0px;
+}
+
+
+#reklama{
+	width: 100%;
+	height: 350px;
+	background-image: url(reklama.jpg);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+#wrapper{
+	width:98%;
+	max-width:1200px;
+	background: white;
+	margin:0 auto;
+	padding:10px;
+}
+.block_towar{
+	display: inline-block;
+	width: 180px;
+	height: 150px;
+	text-align: center;
+	padding: 15px;
+	background: #3F92D2	;
+	margin-bottom:20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.block_yakor1{
+	display: inline-block;
+	width: 180px;
+	height: 150px;
+	text-align: center;
+	padding: 15px;
+	background-image: url(hod.jpg);
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.block_yakor2{
+	display: inline-block;
+	width: 180px;
+	height: 150px;
+	text-align: center;
+	padding: 15px;
+	background-image: url(trans.jpeg);
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.block_yakor3{
+	display: inline-block;
+	width: 180px;
+	height: 150px;
+	text-align: center;
+	padding: 15px;
+	background-image: url(motor.jpg);
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.block_yakor4{
+	display: inline-block;
+	width: 180px;
+	height: 150px;
+	text-align: center;
+	padding: 15px;
+	background-image: url(zap.jpeg);
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.block_zakaz{
+	display: inline-block;
+	width: 30%;
+	height: 15px;
+	text-align: center;
+	padding: 15px;
+	background: #3F92D2	;
+	margin-top:5px;
+	margin-bottom:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#yakor{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+	margin-top: 10px;
+}
+#zakaz{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+	margin-top: 10px;
+}
+
+#towar{
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+}
+.block_towar:hover{
+	background: #FE3F44;
+}
+.block_yakor1:hover{
+    box-shadow: inset 0 0 0 7px #FE3F44;
+}
+.block_yakor2:hover{
+    box-shadow: inset 0 0 0 7px #FE3F44;
+}
+.block_yakor3:hover{
+    box-shadow: inset 0 0 0 7px #FE3F44;
+}
+.block_yakor4:hover{
+    box-shadow: inset 0 0 0 7px #FE3F44;
+}
+
+.block_zakaz:hover{
+	background: #FE3F44;
+}
+#midle{
+	width:98%;
+	max-width:1200px;
+	background: white;
+	margin:0 auto;
+	padding:10px;
+}
+.Oglavlenie{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 40px;
+	margin-bottom: 15px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.Oglavlenie2{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 40px;
+	margin-bottom: 15px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.midle_text{
+	display: inline-block;
+	border-radius: 5px;
+	width: 70%;
+	height: 75%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: justify;
+	padding: 10px;
+	background: white;
+	margin-bottom:15px;
+	margin-left:15%;
+	text-indent: 20px
+}
+
+.text{
+	margin-left:10%;
+	padding-top:10px;
+}
+.text_form{
+	padding-top:10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#footer{
+	width:98%;
+	max-width:1200px;
+	background: #666F74;
+	margin:0 auto;
+	padding:10px;
+}
